@@ -154,6 +154,10 @@ font-size: 30px;
 			html {
 				font-size: 12pt;
 			}
+            img {
+            width: 100%;
+            height: auto;
+}
 
 		}
 
@@ -162,18 +166,23 @@ font-size: 30px;
 			html {
 				font-size: 11pt;
 			}
+            img {
+             width: 100%;
+            height: auto;
+}
 
 		}
 
-		@media screen and (max-width: 360px) {
+		@media screen and (max-width: 480px) {
 
 			html {
 				font-size: 10pt;
 			}
-  img {
-   max-width: 200px; 
-   max-height: 200px; 
- }
+img {
+  width: 100%;
+    
+  height: auto;
+}
 		}
 
 	body, input, select, textarea {
