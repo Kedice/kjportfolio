@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Personal Facebook</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--[if lt IE 9]>
+	       <script src="js/html5shiv.min.js"></script>
+        <![endif]-->
+        <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script>
+$(document).ready(function(){
+	$("#button").click(function(){
+		var item = document.createElement("p");
+		item.innerHTML = $("#task").val();
+		$("#comments").append(item);
+	})	
+	
+	
+});
+     
+$(document).ready(function(){
+	$("#mainbtn").click(function(){
+		var item = document.createElement("p");
+		item.innerHTML = $("#mind").val();
+		$("#main-comments").append(item);
+	})	
+	
+	
+});
+</script>
+    </head>
+   
+    
+
+    <body   style="overflow-x: hidden;  overflow-y: scroll">
+        <header> <img  alt="facebook-logo" src="images/facebook_logo.png" width="80"    height="80" style="float: left; margin-right:30px; "> <h1> Facebook  </h1> 
+                    <div  id="search-bar" style="padding-left: 960px; padding-bottom: 20px"> 
+                    <label for="task"> 
+                    <input type="text" name="task" id="search-task"  placeholder="Search"  style="width: 100px; margin-bottom: 10px;"> </label><br>
+                    <button id="search-button" style="margin-bottom: 10px;">Search</button></div>
+        </header>
+        <div    class="container">
+            <div class="grid-nav"><h5>Navigation </h5>
+               <div id="news-feed"><button  class="btn" ><a   href="https://www.facebook.com/?sk=nf">  <i class="fa fa-newspaper-o" aria-hidden="true"></i> News Feed </a></button></div>
+               <div id="messenger"><button  class="btn" ><a   href="https://www.facebook.com/messages/t/">  <i class="fa fa-space-shuttle" aria-hidden="true"></i> Messenger </a></button></div>
+                <div id="marketplace"><button  class="btn" ><a   href="https://www.facebook.com/marketplace/?ref=bookmark">  <i class="fa fa-shopping-bag" aria-hidden="true"></i> Marketplace </a></button></div>
+                <h5>Shortcut</h5>
+                <div id="ghama"><button  class="btn" ><a   href="https://www.facebook.com/ghadvertising">  <img  alt="gh-advertising" src="images/GHAMA_square.png" width="50"    height="50"    > GHAdvertising </a></button></div>
+            </div>
+            
+            <div class="grid-content"> <h4  style="padding: 20px">Welcome</h4>
+              <div  id="textarea">
+                  <label> 
+                  <textarea id="mind" rows="4" cols="50"    placeholder="What's on you mind?"> What's on your mind?
+                  
+                  </textarea></label>
+                  <button   id="mainbtn">Publish</button>
+                  
+                <div id="main-comments" style="font-size: 0.75em">
+                                
+                </div>
+              </div>
+                
+                
+
+                
+                <div class="news-posts" id="news-item-5"><img  alt="daily-hive-toronto" id="hive"  src="images/daily-hive-toronto.jpg" style="margin: 10px" width="80" height="80"><b>Daily Hive Toronto</b>  <a    href="https://www.facebook.com/SuperSoulSunday/photos/a.312296128817914/1834620273252151/?type=3&__xts__%5B0%5D=68.ARC-oumrwtfNw2Pv-lO30N9pe4fmClNiBwBMAn3Du50LxMXVXhNpExBLotlc3aHlZFi5fK8axtJ_MZpM_Rc0LgrAQ06fw0INBXKA5uaTy_nHLXKknn70XrEkfn4louqUrlJ25Up55bXpL4uKxHoXMPovyzfa14BweVqFLCvDlLT2rxoyHPPNmRbNTpHGyqncSSjxVlupftU5lwffYTPIE8Q91DNfkzWYBUZ5j0jEtGsgMdjARzD9ph2m2aI6Oclpg9HCYtwlAbv4tnsKZ8YJ5zLQ6gMFr7Yqw1-MJrMda_U6010MDFWDgZKFsesVBCuMG0q5eJXbwaYjid7RnICBJe3jlg&__tn__=-R">6 hours ago</a><br><br><br><br><br>
+            <div><img alt="banknotes" id="img-posts-1" src="images/banknote.jpg"  style="width: 680px; "><br><br>
+                 
+                    <label for="task"> 
+                    <input type="text" name="task" id="task"  placeholder="Say Something"  style="width: 680px; margin-bottom: 10px;"> </label><br>
+                    <button id="button" style="margin-bottom: 10px;">Post</button><br>
+                    
+                
+                                
+                <div id="comments"  style="border: 2px grey solid">Posted Comments:
+                
+                
+                </div>
+            </div>
+                    
+                    </div>
+
+            
+                
+              <div class="news-posts" id="news-item-1"><img     alt="profile-pic" id="profile-pic-shared"  src="images/profile-pic.jpg" style="margin: 10px" width="80" height="80"><b>Kedice Jones</b> Shared a  <a    href="https://www.facebook.com/littlebutfiercedodo/posts/2454374834579005?__xts__%5B0%5D=68.ARB6zZrW64PwVVrX2dFor1eRBNr3lJSCZkKKS3wr_mOzytWXy1v3g5AoI173AwPg8u-gy0iyvh46GiA-j44uF1zIiyABLthRXWul70txKvVDVmRNYf0egT3msDdumzMG4CsCLvB3RDU2seI04dB8IaasrZUjoEuAXmxiGHGXv8VSqWUCIlzQ1SWiTbrWUHJnmsJL1UMFWV7Pn_tO_GpNUlNcRB8wu36fl-nlGK62qVeXg8HAhfM2PldJVoA1YyiICySpIncB9N2ayOjsc9tjUNTbwcjHpBy0aCtnG9nocO6CaWj0DSFAWm4gki-jGFfmj-OXFbiug0Xh2NMBS4RgJfkdAtLp8qDBMNYUbjN-PR1sDZkSoOmJFID6kvs9&__tn__=C-R">post</a><br><br><br><br><br>
+            <div><iframe width="560" height="315" src="https://www.youtube.com/embed/qSy7q07mwew" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true">
+                    </div>
+                  
+                    <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-numposts="5">
+                    </div>
+            </div>
+                
+                <div class="news-posts"  id="news-item-2"><img alt="i-am-a-jamican" id="i-am-a-jamaican" style="margin: 10px" src="images/i-am-a-jamaican.jpg" width="80" height="80"><b>I am a Jamaican</b>  <a    href="https://www.facebook.com/IamaJamaican/posts/10156109702412887?__xts__%5B0%5D=68.ARDyWvVVJgSqYr83SjiwzH5UYurSHpwq8sggmKDb3nIMeImfIMB7HQPOqlnwYGYfMWwrCZ-M69JsXbkDbzcRXJN5bEo_RzWeiAqPGybjxjAlrNYUomlLIwHe2pGREQsabWDvYkYEKv5UHbyRqs7cl-mAUlPE8Wj1AOfiktkpiigJAyJo-OV5kGgvn6Ryam6QCB9_L3A0XSUNhfwSu_vNmmopKh1giIl8UYrS_XfmIgU5j5UpOyS4p8Q0JCvMWtQPEEAVm25zoUhAajA1j5vcuMPNPghwv3fetDlA_BRQsU661MdGjkz1xSii6GhLOjWxbXzeRCtrzs2maKwr_AbI&__tn__=-R">November 11 at 9:56 pm</a><br><br><br><br><br>
+            <div><iframe width="560" height="315" src="https://www.youtube.com/embed/ehBQ0Y5JKJc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true">
+                    </div>
+                    <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-numposts="5">
+                    </div>
+            </div>
+             
+                    <div class="news-posts" id="news-item-3"><img   alt="news-post-3" id="i-am-a-jamaican-news-3" style="margin: 10px" src="images/super-soul.png" width="80" height="80"><b>Super Soul Sunday</b>  <a    href="https://www.facebook.com/SuperSoulSunday/photos/a.312296128817914/1834620273252151/?type=3&__xts__%5B0%5D=68.ARC-oumrwtfNw2Pv-lO30N9pe4fmClNiBwBMAn3Du50LxMXVXhNpExBLotlc3aHlZFi5fK8axtJ_MZpM_Rc0LgrAQ06fw0INBXKA5uaTy_nHLXKknn70XrEkfn4louqUrlJ25Up55bXpL4uKxHoXMPovyzfa14BweVqFLCvDlLT2rxoyHPPNmRbNTpHGyqncSSjxVlupftU5lwffYTPIE8Q91DNfkzWYBUZ5j0jEtGsgMdjARzD9ph2m2aI6Oclpg9HCYtwlAbv4tnsKZ8YJ5zLQ6gMFr7Yqw1-MJrMda_U6010MDFWDgZKFsesVBCuMG0q5eJXbwaYjid7RnICBJe3jlg&__tn__=-R">October 20 at 9:56 pm</a><br><br><br><br><br>
+            <div><img  id="img-posts-2" alt="quote" src="images/quote.jpg"  style="width: 540px">
+                    </div>
+                    <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true">
+                    </div>
+                    <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-numposts="5">
+                    </div>
+            </div>
+                
+                <div class="news-posts" id="news-item-4"><img  alt="ashley" id="ashley" style="margin: 10px"  src="images/profile-pic-update.jpg" width="80" height="80"><b>Ashley Moscato</b>  <a    href="https://www.facebook.com/SuperSoulSunday/photos/a.312296128817914/1834620273252151/?type=3&__xts__%5B0%5D=68.ARC-oumrwtfNw2Pv-lO30N9pe4fmClNiBwBMAn3Du50LxMXVXhNpExBLotlc3aHlZFi5fK8axtJ_MZpM_Rc0LgrAQ06fw0INBXKA5uaTy_nHLXKknn70XrEkfn4louqUrlJ25Up55bXpL4uKxHoXMPovyzfa14BweVqFLCvDlLT2rxoyHPPNmRbNTpHGyqncSSjxVlupftU5lwffYTPIE8Q91DNfkzWYBUZ5j0jEtGsgMdjARzD9ph2m2aI6Oclpg9HCYtwlAbv4tnsKZ8YJ5zLQ6gMFr7Yqw1-MJrMda_U6010MDFWDgZKFsesVBCuMG0q5eJXbwaYjid7RnICBJe3jlg&__tn__=-R">September 20 at 9:56 pm</a><br><br><br><br><br>
+            <div><img alt="img-3" id="img-posts-3" src="images/ashley.jpg"  style="width: 680px">
+                    </div>
+                    <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true">
+                    </div>
+                    <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-numposts="5">
+                    </div>
+                      <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true">
+                    </div>
+                  
+                    <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-numposts="5">
+                    </div>
+            </div>
+                
+            </div>
+              
+            <div class="grid-aside" style="padding: 0px;">
+            
+            <div>
+                 <div    id="profile-div"> 
+                <h5>Kedice Jones Profile</h5>
+                <img  alt="kedice-profile-pic"  src="images/profile-pic.jpg"  style="width: 100px; margin-left: 30px "><br>
+                <p><i class="fa fa-graduation-cap" aria-hidden="true"  style="font-size: 10px;"></i> Studied Media studies at <a  href="https://www.facebook.com/uoguelphhumber/?eid=ARDBuPiukqL_O8B0TKR1_iQrcf1DYNmbEP1lIFb5Uq4Dstu3CwIXUE1Nhgs6BEkMkmO0nttfMWmZ3vqF&timeline_context_item_type=intro_card_education&timeline_context_item_source=100013523110950&fref=tag"> University of Guelph-Humber (Official)</a></p>
+                <p><i class="fa fa-university" aria-hidden="true"   style="font-size: 10px;"></i> Went to <a   href="https://www.facebook.com/pages/St-Joan-of-Arc-Catholic-High-School/104105942958933?eid=ARA-oG5FDCIpmH_ILoOvYXlFm6w-vkXN8l3SHWpwxhTTgvEG30KabWqIXyB9cBbh9TZDJNgkQctMOE8X&timeline_context_item_type=intro_card_education&timeline_context_item_source=100013523110950&fref=tag"> St. Joan of Arc Catholic High School</a></p>
+                <p><i class="fa fa-location-arrow" aria-hidden="true"   style="font-size: 10px;"></i> Lives in <a  href="https://www.facebook.com/pages/Vaughan-Ontario/105959272778333?eid=ARAEGfzYmw5lVIx-pmtNrKQjy8-nY0VPGBLNcniW_4cxI0tJTt3QjXC_d_DXTzsK0qVBkdUMe9Bo5mT5&timeline_context_item_type=intro_card_hometown&timeline_context_item_source=100013523110950&fref=tag"> Vaughan, Ontario</a></p>
+                </div><br>
+                
+                <div    id="sponsored"> 
+                <h5 style="text-align: center">Sponsored</h5>
+                <img   alt="starbucks-ad" src="images/starbucks.jpg"  style="width: 100px; margin-left: 30px ">
+                <p>The happiest hour of the year. Starbucks® Rewards Members get exclusive access to deals on drinks this holiday season. Join now.</p>
+                </div>
+            <div id="events"><a   href="https://www.facebook.com/events?ref=46&action_history=null"> <button  class="btn" > <i class="fa fa-calendar" aria-hidden="true"></i> You have 2 events this week </button></a></div><br>
+            
+            </div>
+                
+         
+            </div>
+        </div>    
+
+    </body>    
+       
+    
+   
+
+</html>

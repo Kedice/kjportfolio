@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:700|Open+Sans:300,300i,700');
+/*Erin Meyer reset begins */
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+/*Erin Meyer reset ends*/
+/*General Page Style*/
+ 
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+   
+  
+    line-height: 1.5;
+    background-color: #ccccff; 
+}
+  /* 30px (desired line height) / 20px (desired font size)
+       = 1.5 (line height multiplier) */ 
+h1, 
+h2, 
+h3,
+/* styling the links inside the tag that 
+   has the id 'main-nav'*/
+
+    
+}
+
+
+}
+
+
+  
+
+nav a{
+    border: solid 1px #4b0082;
+    display: block;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    background-color: #4b0082;
+    transition: all 0.5s ease;
+     box-shadow: 2px 1px 4px black;
+    
+}
+    
+nav a:hover{
+    background-color: #c8971d; /* Green */
+    color: #c8971d;
+}
+    
+    /*why is header nav have green background?*/
+    
+
+
+h2{
+    font-size: 15px;
+    margin-bottom: 10px;
+     background-color: #57bb91; 
+    color: #f3fde4;
+      text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000; */
+		opacity: 0.3;
+	font: 58px 'Rhyder';
+    width: 100%;
+   
+}
+#about, #home, #recent-post, #social-media, #main-nav ul{max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;}
+#main-nav ul{
+    max-width: auto;
+    /* center the content */
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    line-height: 40px;
+     display: block;
+    padding-left: 12px;
+    padding-right: 12px;
+    text-decoration: none;
+    line-height: 80px;
+    overflow: hidden;
+}
+/*#main-nav ul {
+    overflow: hidden; */
+/**
+ * Main Navigation
+ */
+
+#main-nav{
+    background-color: #4b0082;
+    font-family: 'Rhyder', sans-serif, 
+    height: 40px;
+    max-width: inherit;
+    /* this makes the nav stay in place
+       while we scroll */
+    position: fixed;
+    /* restore full-browser width */
+    width: 100%;
+    /* make sure that the top of the nav
+       touches the top of the browser window */
+    top: 0;
+}
+
+#main-nav ul{
+    overflow: hidden;
+    clear:both;
+    max-width: inherit;
+}
+
+#main-nav li {
+    float: left; 
+}
+
+#main-nav a{  display: block;
+    
+    padding-left: 120px;
+    padding-right: 120px;
+    color: #bbefd9;
+    font-family: 'Rhyder', sans-serif;
+    text-decoration: none;
+    line-height: 40px;
+    text-decoration: none;
+    clear:both; 
+       transition: all 0.5s ease;
+     box-shadow: 2px 1px 4px black;
+   
+}
+
+/* #main-nav a {
+    display: block;
+    padding-left: 12px;
+    padding-right: 12px;
+    color: #ede5c7;
+    text-decoration: none;
+    line-height: 40px; */
+#site-header{
+    clear: both;
+    margin-top: 40px;
+    height: 300px;
+    width: 1280px;
+    background-image: url("/source/kedice-jones-header.jpg");
+    
+    
+}
+
+#site-header a{
+    text-align: center;
+    display: block;
+}
+
+#site-header h1{
+    text-align: center; 
+}
+
+/**
+ * About Section
+ */
+
+#about blockquote{
+    width: 460px;
+    float: right; 
+    font-family: "Nueva Std", "cambria";
+    font-size: 20px;
+   margin-top: 10px; 
+    padding-top: -80px; 
+    overflow: auto
+}
+
+#about p:last-child{
+    margin-right: auto;
+}
+
+#recent-post{
+    clear: both;
+}
+
+
+#profile-pic{float: inherit;
+}
+
+img {
+    max-width: 100%;
+    width: 460px;}
+#books{float: left;
+ width: 300px;}
+#journal{display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+ width: 300px;}
+#travel{ float:right;
+    position:inherit;
+    right: 0px;
+    width: 300px;
+    
+    }
+
+#social{display: block;
+    padding-left: 320px;
+    padding-right: 220px;
+ width: 300px;}
+article {
+    clear: both;
+}
+
+p{ color: black;
+                font-family: 'Rhyder';
+                font-size: 18px;
+text-align: center}
+
+ol, ul{list-style: none;}
+

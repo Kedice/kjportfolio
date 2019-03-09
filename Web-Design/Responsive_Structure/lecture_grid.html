@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en"   >
+
+<!-- This assignment needs to be done with display: grid; and that means you will have a container (doesn’t need to be the <body> like in the example, probably be best to use a <div>) and many child elements (can be <divs>, <nav>, <sections>, <main>, whatever you think is appropriate for the section you’re creating. DONE
+
+There is a gap between the rows and the columns, in pixels, make sure you pick a size for the gap and specify it. DONE
+
+You’ll need to specify how many columns the grid has using grid-template-columns; make you specify them in fractions (frs). Of course, the fractional breakdown is dependent on the size you’re dealing with; the desktop and phone versions will have different column specifications, as will the tablet size. 
+
+I strongly, so strongly, recommend that you use grid-template-areas to define the layout; if you use start/stop or start/span (and make it work) I will be impressed but it won’t get you any more marks and it will probably take you twice as long; use grid-template-areas 
+
+A number of the elements have a mid-height given that the content in the elements is not very tall. Consider adding min-heights to thinks like the hero box and content box and the extra box. 
+
+You’ll need two media queries for this assignment. One with a max-width or, say, 500px. This will be the one for the phone. Then create another one of, say, 800 pixels for the tablet. 
+
+You don’t need to use the vh and vw sizing from the sample in class; this page is long enough that it occupies a full screen (as long as you use some min-heights as suggested above)
+--> 
+    <head> 
+    <title> Assignment #7</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style> 
+    h2{color: white}
+        * {
+    box-sizing: border-box;
+}
+        html,body{width: 100vw;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0; }
+        /* grid templates are only for the body tag */ 
+        body{display: grid;
+            grid-gap: 15px;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+       
+            text-align: center; 
+            }
+        
+       
+            
+        header{background: lightblue;
+             
+                grid-column: 1/4;
+                min-height: 50px;}
+        #hero{background: lightgray;
+            grid-column: 1/2;
+            grid-row: 2/4;
+            min-height: 250px;}
+            
+         #main{background: orange;
+           grid-column:2/4;
+            grid-row: 2/6;
+            min-height: 300px;
+        }
+            
+        #sidebar{background: olive;
+                grid-column:1/2;
+                grid-row:4/8;
+                min-height: 200px;}
+
+        #extra-content{background: grey;
+             grid-column:2/4;
+            grid-row:6/8;
+            min-height: 100px;
+        }
+        #related-images{background: green;
+             grid-column:1/2;
+            grid-row:8/10;
+            min-height: 70px;}
+        #related-posts{background: lightpink;
+             grid-column: 2/4;
+            grid-row:8/10; }
+        
+        
+         footer{
+                background: darkorange;
+                grid-column:1/4;
+                grid-row:10/11;
+                }
+     
+            
+
+                .grid{width: 100%; }
+}   
+        /* OLD VERSION */ 
+       @media screen and (max-width:500px) { 
+     body { display: block;
+            grid-gap: 15px;
+            grid-template-rows: repeat(11, 1fr);
+            grid-template-columns: 1fr;
+            text-align: center; 
+            grid-template-areas:        "header"
+                                        "hero"
+                                        "main"
+                                         "sidebar"
+                                        "extra-content"
+                                        "related-images"
+                                        "related-posts"
+                                        "footer"; 
+            }} 
+            
+             
+        } 
+            
+        @media (max-width:800px) { 
+            body{ /* display: flex; 
+               flex-wrap: wrap;
+               flex-direction: column; */
+                grid-gap: 15px;} 
+            
+                  
+            }
+ @media only screen and (max-width: 800px) {
+  body {
+    display: block;
+    grid-gap: 15px;
+      
+     
+  }    
+ @media only screen and (max-width: 500px) {
+  body {
+    display: block;
+    grid-gap: 15px;
+  } 
+       
+            </style> 
+    </head>
+    
+    
+    <body>
+        
+    <header class="grid"> <h2> Header </h2> </header>
+    
+    
+   <div id="hero"   class="grid"><h2> Hero</h2></div>
+    <div id="sidebar"   class="grid"><h2>Sidebar</h2></div>
+   <div id="main"   class="grid"><h2> Main Content </h2></div>
+    <div    id="extra-content"  class="grid"> <h2>Extra Content </h2></div>
+    <div    id="related-images" class="grid"> <h2>Related Images </h2></div>
+    <div    id="related-posts"  class="grid"> <h2>Related Posts </h2></div>
+    </body>
+    <footer class="grid"><h2>Footer</h2></footer>
+</html>

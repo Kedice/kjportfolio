@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:700|Open+Sans:300,300i,700');
+
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+/**
+ * General Page Style
+ */
+
+body{
+    font-family: 'Rhyder','font-family' 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    /* 30px (desired line height) / 20px (desired font size)
+       = 1.5 (line height multiplier) */
+    line-height: 1.5;
+    
+    background-color: grey;
+    background-image: url(../images/background-for-final.jpg);
+    background-position: top center;
+}
+
+h1, 
+h2, 
+h3,
+/* styling the links inside the tag that 
+   has the id 'main-nav'*/
+#main-nav a{
+    font-family:'Rhyder' 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+        
+}
+
+
+h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: white;
+    background-color: #740029;
+  font-family: 'Rhyder';
+    max-width: 940px;
+    clear:both;
+}
+.about{
+    /* center the content */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left; 
+}
+
+#about,
+#notes,
+#restaurants,
+#tips,
+#main-nav ul{
+    max-width: 940px;
+    /* center the content */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/**
+ * Main Navigation
+ */
+
+#main-nav{
+    background-color: #1988ba;
+    height: 40px;
+    
+    /* this makes the nav stay in place
+       while we scroll */
+    position: fixed;
+    /* restore full-browser width */
+    width: 100%;
+    /* make sure that the top of the nav
+       touches the top of the browser window */
+    top: 0;
+    
+    /* make this nav bar go over top of everything
+       on the page */
+    z-index: 9999;
+}
+
+#main-nav ul{
+    overflow: hidden;
+}
+
+#main-nav li{
+    float: left;
+}
+
+#main-nav a{
+    display: block;
+    padding-left: 12px;
+    padding-right: 12px;
+    color: #0f1029;
+    text-decoration: none;
+    line-height: 40px;
+    font-family: 'Rhyder';
+    text-shadow: 0px -1px 0px rgba(255,255,255,.5);
+    
+}
+
+#main-nav .current{
+    background-color: #20b6a0;
+    margin-right: 10px;
+    
+    box-shadow: 
+ /* 0 1px 2px #fff, bottom external highlight*/
+  0 -1px 1px #666, /*top external shadow*/ 
+  inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/ 
+  inset 0 1px 1px rgba(255,255,255,0.8); /*top internal highlight*/
+
+}
+
+/**}
+ * Site Header
+ */
+
+#site-header{
+    clear: both;
+    margin-top: 40px;
+    
+    height: 300px;
+    background-image:url(../images/space-jam-header.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover
+
+    
+   
+}
+
+/* the triangle shape in the header */
+#site-header::after{
+    content: '';
+    
+    /* this creates the triangle shape */
+   /* border: solid 300px transparent;
+    border-top-color: rgba(0,0,0,0.5);
+    display: block;
+    width: 0px;
+    */ 
+    
+    
+    /* position absolute allows us to freely
+       move the triangle around in the header*/
+    position: absolute;
+    
+    /* align to top and center horizontally */
+    top: 0;
+    left: 50%;
+    margin-left: -300px; 
+    
+    /* this is lower than the heading's z-index,
+       so the triangle will appear "stacked" under the heading */
+    z-index: 50;
+}
+
+#site-header a{
+    text-align: center;
+    
+    /* a tags display:inline by default, 
+       by adding dispplay: block we are making
+       this link act like a box we can resize */
+    display: block;
+    
+    text-decoration: none;
+    color: #fff;
+    
+    font-size: 40px;
+    line-height: 1;
+    
+    padding-top: 60px;
+    
+    text-shadow: 0 3px 0 rgba(0,0,0,0.5);
+    
+    position: relative;
+    z-index: 100;
+}
+
+#site-header span{
+    font-size: 60px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+/**
+ * About Section
+ */
+
+#about{
+    padding-top: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+#about p{
+    width: 430px;
+    float: left;
+    color: white;
+    
+}
+
+#about p:last-child{
+    margin-left: 20px;
+}
+
+/* hide the heading, as it is not needed
+   in the design */
+#about h2{
+    display: none;
+    color: white; 
+    max-width: 300px;
+}
+
+#about h3{color: white;
+}
+
+#notes p{
+    width: 430px;
+    float: left;
+    color: white;
+    margin-right: 20px;
+   }
+
+#game p{
+    
+    float: none;
+    color: white;
+    margin-right: 20px;
+ padding-left: 20px
+   }
+
+article#teams{width: 460px;
+      clear:both; 
+color: white;
+padding-left: 195px;
+width: 920px; }
+
+article#teams figure a.first img{padding-right: 350px;
+clear: both;
+ }
+
+/*article#teams figure p{padding-left: 350px;
+position: relative;}*/
+
+figure {float:left;
+    clear:both;
+    margin-left: 10px; 
+    margin-right: 20px;
+    max-width:300px;
+
+}
+article#cast{width: 460px;
+      clear:both; 
+color: white;
+padding-left: 195px;
+width: 920px; }
+
+article#cast figure a.first img{padding-right: 350px;
+clear: both;
+ }                 
+
+#monstars{padding-top:120px;
+    margin-left: 50px;
+    
+   
+  
+}
+
+p#monstars{font-family: 'Gadugi';
+    font-size: 20px;
+    font-weight: 300;
+margin-left: 15px;
+}
+
+
+p{font-family: 'Gadugi';;
+ font-size: 20px;
+    font-weight: 300;}
+figcaption{font-family: 'Gadugi';;
+ font-size: 20px;
+    font-weight: 300;}
+
+/**
+ * Places to Visit
+ */
+
+section#trailer{width: 460px;
+      clear:both; 
+color: white;
+padding-left: 195px;
+width: 920px;
+     
+}
+section#game{width: 460px;
+      clear:both; 
+color: white;
+padding-left: 195px;
+width: 920px;
+     
+}
+section#game h2{padding-left: 20px;}
+#notes,
+#restaurants{
+    clear: both;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+#notes a,
+#restaurants a{
+    display: block;
+    width: 300px;
+    float: left;
+    
+    text-decoration: none;
+    font-size: 16px;
+    color: #ede5c7;
+    text-align: center;
+    
+    
+    position: relative;
+}
+.gamelink{padding-left: 20px;}
+#notes img,
+#restaurants img{
+    display: block;
+}
+
+#notes figcaption,
+#restaurants figcaption{
+    background-color: rgba(0,0,0,0.35);
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+
+
+#restaurants .first,
+#restaurants .second{
+    margin-right: 20px;
+}
+
+.video{margin-left: 10px; }
+p#monstars{margin-left: 50px; }
+
+
+footer#site-footer p{color: white;
+text-align: center}
+
+#main-nav .current:hover{  
+    transition-duration: 0.4s;
+
+    background-color: yellow; 
+    color: #0d0e24; } 
+section#objective{clear:both; 
+        padding-left:215px;
+        width: 920px;
+        color: white;}
+
