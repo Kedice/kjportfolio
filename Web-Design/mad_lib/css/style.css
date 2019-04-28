@@ -1,0 +1,51 @@
+/* Erin myer CSS reset begins */
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* Erin myer CSS reset ends */
+
+/* Our own style begins here */
+html{/*background-color: hsla(0, 9%, 61%, 0.46);*/
+    background-image:url("../images/city_top_view_day_light_sky_87251_1920x1080.jpg");}
+body {font-family: arial, helvetica, sans-serif;
+    ;
+}
+
+
+
+.vertical-menu {
+  width: auto;
+  text-align: center;
+margin: auto;
+border-bottom: solid black 10px;
+font-family: cambria;
+font-size: 30px;
+
+
+    
+}
+
+.vertical-menu a {
+  background-color: lightgray;
+  opacity: 0.5;
+  color: black; 
+  display: block; 
+  padding: 12px; 
+  text-decoration: none; 
+}
+
+.vertical-menu a:hover {
+  background-color: lightcoral;
+  color: orangered;
+}
+
+.vertical-menu a.active {
+  background-color: indianred; 
+  color: white;
+}
+
+form{
+background-color: hsla(0, 4%, 100%, 0.78);
+margin: 30px;
+align-content: center;
+padding: 30px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
