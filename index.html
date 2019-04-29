@@ -1,4 +1,5 @@
 <!DOCTYPE HTML>
+<!-- Javascript fr button clicks -->
 
 <html>
 	<head>
@@ -7,7 +8,60 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+       <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	</head>
+    
+    
+<!-- Version 1 -->
+    
+    
+    
+
+    <script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+    </script>
+    
+<!-- Version 2 --> <!--
+    <script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn-2')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content-2");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+    </script> 
+    -->
 	<body class="is-preload">
 
 		<!-- Wrapper -->
@@ -128,20 +182,57 @@
 							</article>
 
 						<!-- Web Design Project -->
-							<article id="web-design-project">
+                            <!-- Web Design Nav Bar --> 
+                        <!-- -->
+                                <article id="web-design-project">
+								<h2 class="major">Web Design Projects</h2><br>
+                                <p>As this page is still in the process of updating, please feel free to click below to see my web design projects I have done successfully in my web design courses.  </p>
+                                
+                                    
+                                    
+                                <div class="dropdown">
+                                <button onclick="myFunction()" class="dropbtn">Front - End Design</button>
+                                    <div id="myDropdown" class="dropdown-content">
+                                        <a href="#">Space Jam Website Re-Design</a>
+                                        <a href="#">Facebook Mockup</a>
+                                        <a href="#">Responsive Structure Sample</a>
+                                        <a href="#">SVG Structure Sample</a>
+                                    </div>
+                                </div>
+
+								
+                                  
+                                                                   
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    <div class="dropdown-2">
+                                    <button class="dropbtn-2">Dynamic Web Pages & Applications Coming Soon</button>
+                                    <div class="dropdown-content-2">
+                                        <a href="../kjportfolio/Web-Design/mad_lib/mad_libber_index.html">Mad Libber Story Game</a>
+                                        <a href="../kjportfolio/Web-Design/mad_lib/mad_libber_index.html">Celsius to Farenheit Weather Converter</a>
+                                        <a href="../kjportfolio/Web-Design/mad_lib/mad_libber_index.html">Blog Site with MYSQL Integration</a>
+                               
+                                        </div> </div>  
+
+  
+							</article> 
+							<!-- <article id="web-design-project-REMOVE">
 								<h2 class="major">Web Design Projects</h2>
 								
 								<div class="vertical-menu">
                                 <a href= "Web-Design/Project-Folder/root/index.html" >Final Project Web Design 1</a>
                                 <a href="Web-Design/KEDICE_JONES_MAJOR_PROJECTWebDesign2/root/index.html">Facebook Mockup</a>
-                                <a href="../kjportfolio/Web-Design/mad_lib/index_experiment_2.php">Mad Libber Story Game </a>
+                                <a href="../kjportfolio/Web-Design/mad_lib/mad_libber_index.html">Mad Libber Story Game </a>
                                 <a href="Web-Design/Responsive_Structure/lecture_grid.html">Resposive Structure Sample</a>
                                 <a href="Web-Design/SVG/root/SVGindex.html">SVG Structure Sample</a>
                                 </div>    
 
  
   
-							</article>
+							</article> -->
 
 						<!-- Contact -->
 							<article id="kedice-contact">
